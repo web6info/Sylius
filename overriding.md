@@ -81,6 +81,6 @@ Modificare il file `src/Web6/Bundle/XxxBundle/Resources/config/routing/frontend/
 ```yaml
 sylius_homepage:
     pattern: /
-    defaults: { _controller: Web6ViaggiBundle:Homepage:main }
+    defaults: { _controller: Web6XxxBundle:Homepage:main }
     #defaults: { _controller: sylius.controller.frontend.homepage:mainAction }
 ```
