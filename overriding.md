@@ -45,11 +45,27 @@ class Web6XxxBundle extends Bundle{
     public function getParent(){ return 'SyliusWebBundle'; }
 }
 ```
+
 Per modificare il layout del frontend:
 
 ```bash
-$ cd ~/path/of/project/vendor/sylius/web-bundle/Sylius/Bundle/WebBundle/Controller
-$ cp -vR Frontend ~/path/of/project/src/Web6/XxxBundle/Controller
-$ cd ~/path/of/project/vendor/sylius/web-bundle/Sylius/Bundle/WebBundle/Resources/config
-$ cp -vR routing ~/path/of/project/src/Web6/XxxBundle/Resources/config
+$ cd /dir/progetti/progetto/src/Sylius/Bundle/WebBundle/Controller/Frontend
+$ cp -vR HomepageController.php /dir/progetti/progetto/src/Web6/Bundle/XxxBundle/Controller
+
+$ cd /dir/progetti/progetto/src/Sylius/Bundle/WebBundle/Resources/config
+$ cp -vR routing ~/path/of/project/src/Web6/Bundld/XxxBundle/Resources/config
+```
+
+Modificare il file `app/config/routing.yml`:
+```yaml
+#web6_xxx:
+#    resource: "@Web6XxxBundle/Resources/config/routing.yml"
+#    prefix:   /
+
+sylius_installer:
+    resource: "@SyliusInstallerBundle/Resources/config/routing.yml"
+
+sylius_web:
+    resource: "@Web6XxxBundle/Resources/config/routing/main.yml"
+    #resource: "@SyliusWebBundle/Resources/config/routing/main.yml"
 ```
