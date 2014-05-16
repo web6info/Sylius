@@ -19,8 +19,7 @@ $ cd /directory/dei/progetti/Sylius
 $ php composer.phar create-project
 ```
 
-Quando chiede user e pass inserire le proprie credenziali di github
-
+Quando chiede user e pass inserire le proprie credenziali di github.<br>
 Per installare la distribuzione "prod" lanciare il seguente comando:
 ```bash
 $ php app/console sylius:install -e prod --no-debug
