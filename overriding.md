@@ -53,19 +53,34 @@ $ cd /dir/progetti/progetto/src/Sylius/Bundle/WebBundle/Controller/Frontend
 $ cp -vR HomepageController.php /dir/progetti/progetto/src/Web6/Bundle/XxxBundle/Controller
 
 $ cd /dir/progetti/progetto/src/Sylius/Bundle/WebBundle/Resources/config
-$ cp -vR routing ~/path/of/project/src/Web6/Bundld/XxxBundle/Resources/config
+$ cp -vR routing ~/path/of/project/src/Web6/Bundle/XxxBundle/Resources/config
 ```
 
-Modificare il file `app/config/routing.yml`:
+Modificare il file `app/config/routing.yml` nel seguente modo:
 ```yaml
 #web6_xxx:
 #    resource: "@Web6XxxBundle/Resources/config/routing.yml"
 #    prefix:   /
 
-sylius_installer:
-    resource: "@SyliusInstallerBundle/Resources/config/routing.yml"
+...
 
 sylius_web:
     resource: "@Web6XxxBundle/Resources/config/routing/main.yml"
     #resource: "@SyliusWebBundle/Resources/config/routing/main.yml"
+```
+
+Modificare il file `src/Web6/Bundle/XxxBundle/Resources/config/routing/main.yml`:
+```yaml
+sylius_frontend:
+    resource: @Web6XxxBundle/Resources/config/routing/frontend/main.yml
+    #resource: @SyliusWebBundle/Resources/config/routing/frontend/main.yml
+...
+```
+
+Modificare il file `src/Web6/Bundle/XxxBundle/Resources/config/routing/frontend/main.yml`:
+```yaml
+sylius_homepage:
+    pattern: /
+    defaults: { _controller: Web6ViaggiBundle:Homepage:main }
+    #defaults: { _controller: sylius.controller.frontend.homepage:mainAction }
 ```
