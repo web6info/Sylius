@@ -92,7 +92,7 @@ sylius_homepage:
 ```
 Modificare il file `src/Web6/Bundle/XxxBundle/Controller/HomepageController.php`:
 ```php
-namespace Web6\Bundle\ViaggiBundle\Controller;
+namespace Web6\Bundle\XxxBundle\Controller;
 ...
 public function mainAction(){
 	return $this->render('Web6XxxBundle:Default:index.html.twig');
