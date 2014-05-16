@@ -2,10 +2,9 @@ Overriding
 ===
 
 Aggiungere nel file /dir/progetti/progetto/composer.json la seguente riga:
-```json
+```yaml
     "sensio/generator-bundle": "~2.3",
 ```
-
 Installare il "SensioGeneratorBundle" lanciando il seguente comando:
     $ cd /dir/progetti/progetto/
     $ php composer.phar update
