@@ -1,14 +1,28 @@
 Overriding
 ====
-Aggiungere nel file /dir/progetti/progetto/composer.json la seguente riga:
+
+Modificare il file /dir/progetti/progetto/composer.json:
+
 ```js
-"sensio/generator-bundle": "~2.3",
+...
+"require": {
+    ...
+    "sensio/generator-bundle": "~2.3",
+    ...
+},
+...
+"autoload": {
+	"psr-0": { "Sylius\\": "src/", "Web6\\": "src/" }
+},
+...
 ```
-Installare il "SensioGeneratorBundle" lanciando il seguente comando:
+
+Applicare le modifiche lanciando i seguenti comandi:
 ```bash
 $ cd /dir/progetti/progetto/
 $ php composer.phar update
 ```
+
 Attivare il "SensioGeneratorBundle" modificando il file "AppKernel.php":
 ```php
 public function registerBundles(){
@@ -21,11 +35,11 @@ public function registerBundles(){
 ```
 Creare il proprio bundle:
 ```bash
-$ php app/console generate:bundle --namespace=Web6/XxxBundle --format=yml
+$ php app/console generate:bundle --namespace=Web6/Bundle/XxxBundle --format=yml
 ```
-Modificare il file "src/Web6/XxxBundle/Web6XxxBundle.php":
+Modificare il file "src/Web6/Bundle/XxxBundle/Web6XxxBundle.php":
 ```php
-namespace Web6\XxxBundle;
+namespace Web6\Bundle\XxxBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 class Web6XxxBundle extends Bundle{
     public function getParent(){ return 'SyliusWebBundle'; }
