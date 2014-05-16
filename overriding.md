@@ -48,8 +48,8 @@ class Web6XxxBundle extends Bundle{
 Per modificare il layout del frontend:
 
 ```bash
-    $ cd ~/path/of/project/vendor/sylius/web-bundle/Sylius/Bundle/WebBundle/Controller
-    $ cp -vR Frontend ~/path/of/project/src/Web6/XxxBundle/Controller
-    $ cd ~/path/of/project/vendor/sylius/web-bundle/Sylius/Bundle/WebBundle/Resources/config
-    $ cp -vR routing ~/path/of/project/src/Web6/XxxBundle/Resources/config
+$ cd ~/path/of/project/vendor/sylius/web-bundle/Sylius/Bundle/WebBundle/Controller
+$ cp -vR Frontend ~/path/of/project/src/Web6/XxxBundle/Controller
+$ cd ~/path/of/project/vendor/sylius/web-bundle/Sylius/Bundle/WebBundle/Resources/config
+$ cp -vR routing ~/path/of/project/src/Web6/XxxBundle/Resources/config
 ```
