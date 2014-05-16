@@ -23,5 +23,5 @@ Quando chiede user e pass inserire le proprie credenziali di github
 
 Per installare la distribuzione "prod" lanciare il seguente comando:
 ```bash
-$ app/console sylius:install -e prod --no-debug
+$ php app/console sylius:install -e prod --no-debug
 ```
