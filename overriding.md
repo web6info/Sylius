@@ -37,6 +37,12 @@ Creare il proprio bundle:
 ```bash
 $ php app/console generate:bundle --namespace=Web6/Bundle/XxxBundle --format=yml
 ```
+In `app/CliKernel.php` è possibile individuare la seguente riga
+```php
+new \Web6\Bundle\XxxBundle\Web6XxxBundle(),
+```
+Questa riga va eliminata da `app/CliKernel.php` e aggiunta in `app/AppKernel.php`.
+
 Modificare il file `src/Web6/Bundle/XxxBundle/Web6XxxBundle.php`:
 ```php
 namespace Web6\Bundle\XxxBundle;
