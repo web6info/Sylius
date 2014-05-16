@@ -84,3 +84,9 @@ sylius_homepage:
     defaults: { _controller: Web6XxxBundle:Homepage:main }
     #defaults: { _controller: sylius.controller.frontend.homepage:mainAction }
 ```
+Modificare il file `src/Web6/Bundle/XxxBundle/Controller/HomepageController.php`:
+```php
+public function mainAction(){
+	return $this->render('Web6ViaggiBundle:Default:index.html.twig');
+}
+```
