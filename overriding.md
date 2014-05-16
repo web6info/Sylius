@@ -86,7 +86,13 @@ sylius_homepage:
 ```
 Modificare il file `src/Web6/Bundle/XxxBundle/Controller/HomepageController.php`:
 ```php
+namespace Web6\Bundle\ViaggiBundle\Controller;
+...
 public function mainAction(){
 	return $this->render('Web6ViaggiBundle:Default:index.html.twig');
 }
+```
+Dove il file`src/Web6/Bundle/XxxBundle/Resources/views/Default/index.html.twig` contiene il seguente testo:
+```html
+Hello World!
 ```
