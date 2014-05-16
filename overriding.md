@@ -1,5 +1,5 @@
 Overriding
-===
+====
 Aggiungere nel file /dir/progetti/progetto/composer.json la seguente riga:
 ```js
 "sensio/generator-bundle": "~2.3",
