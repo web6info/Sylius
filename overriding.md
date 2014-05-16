@@ -1,7 +1,7 @@
 Overriding
 ====
 
-Modificare il file /dir/progetti/progetto/composer.json:
+Modificare il file `/dir/progetti/progetto/composer.json`:
 
 ```js
 ...
@@ -23,7 +23,7 @@ $ cd /dir/progetti/progetto/
 $ php composer.phar update
 ```
 
-Attivare il "SensioGeneratorBundle" modificando il file "AppKernel.php":
+Attivare il "SensioGeneratorBundle" modificando il file `AppKernel.php`:
 ```php
 public function registerBundles(){
     $bundles = array(
@@ -37,7 +37,7 @@ Creare il proprio bundle:
 ```bash
 $ php app/console generate:bundle --namespace=Web6/Bundle/XxxBundle --format=yml
 ```
-Modificare il file "src/Web6/Bundle/XxxBundle/Web6XxxBundle.php":
+Modificare il file `src/Web6/Bundle/XxxBundle/Web6XxxBundle.php`:
 ```php
 namespace Web6\Bundle\XxxBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
