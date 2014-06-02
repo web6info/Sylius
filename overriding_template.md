@@ -1,6 +1,8 @@
 Overriding template
 ====
 
+[Sylius doc](http://docs.sylius.org/en/latest/bundles/general/overriding_controllers.html?highlight=overriding)
+
 Modificare il file `/dir/progetti/progetto/composer.json`:
 
 ```js
