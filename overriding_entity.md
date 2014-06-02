@@ -1,6 +1,6 @@
 Overriding entity
 ====
-[Silius doc](https://github.com/Sylius/Sylius-Docs/blob/master/bundles/general/overriding_models.rst#overriding-models)
+[Silius doc](http://docs.sylius.org/en/latest/bundles/general/overriding_models.html?highlight=overriding)
 
 Creeremo la nuova entità `Product` sovrascrivendo quella di default presente nel path `Sylius\Component\Product\Model\Product.php`. La nuova entità esisterà nel dominio del nostro bundle, lasciando intatta l'entità di default.
 
