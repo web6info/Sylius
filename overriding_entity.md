@@ -35,11 +35,15 @@ Adesso definiamo il mapping per questa entità.
 
 </doctrine-mapping>
 ```
-Infine, aggiungiamo le seguenti linee in ``app/config/config.yml``:
+Aggiungiamo le seguenti linee in ``app/config/config.yml``:
 ```yaml
 sylius_product:
     driver: doctrine/orm
     classes:
         product:
-            model: Web6\Bundle\XxxBundle\Entity\Product # Your product entity.
+            model: Web6\Bundle\XxxBundle\Entity\Product
+```
+Infine aggiorniamo il database:
+```bash
+$ php app/console doctrine:schema:update --force
 ```
