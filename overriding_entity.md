@@ -26,8 +26,9 @@ Adesso definiamo il mapping per questa entità.
                          xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
                                              http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
-    <entity name="Web6\Bundle\XxxBundle\Entity\CartItem" table="web6_product">
-    </entity>
+  <entity name="Web6\Bundle\ViaggiBundle\Entity\Product" table="sylius_product">
+    <field name="expireOn" column="expire_on" type="datetime" />
+  </entity>
 
 </doctrine-mapping>
 ```
