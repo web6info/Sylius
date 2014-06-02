@@ -35,5 +35,11 @@ Adesso definiamo il mapping per questa entità.
 
 </doctrine-mapping>
 ```
-Non è necessario mappare il campo *ID* dal momento che questo è già mappato nella classe
-`Sylius\Component\Product\Model\Product`.
+Infine, aggiungiamo le seguenti linee in ``app/config/config.yml``:
+```yaml
+sylius_taxation:
+    driver: doctrine/orm
+    classes:
+        tax_rate:
+            model: Acme\ShopBundle\Entity\TaxRate # Your tax rate entity.
+```
