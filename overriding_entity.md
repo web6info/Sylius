@@ -10,7 +10,7 @@ Iniziamo creando la classe `Product.php` nel namespace `Web6\Bundle\XxxBundle\En
 // src/Web6/Bundle/XxxBundle/Entity/Product.php
 namespace Web6\Bundle\XxxBundle\Entity;
 
-use Sylius\Component\ProductBundle\Model\Product as BaseProduct;
+use Sylius\Component\Product\Model\Product as BaseProduct;
 
 class Product extends BaseProduct
 {
