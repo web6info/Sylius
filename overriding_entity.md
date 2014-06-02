@@ -25,7 +25,7 @@ Now we need to define a simple mapping for this entity to map its fields.
                          xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
                                              http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
-    <entity name="App\AppBundle\Entity\CartItem" table="app_cart_item">
+    <entity name="Web6\Bundle\XxxBundle\Entity\CartItem" table="web6_product">
     </entity>
 
 </doctrine-mapping>
