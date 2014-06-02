@@ -12,7 +12,6 @@ namespace Web6\Bundle\XxxBundle\Entity;
 
 use Sylius\Component\Product\Model\Product as BaseProduct;
 
-class Product extends BaseProduct
-{
+class Product extends BaseProduct{
 }
 ```
