@@ -1,4 +1,4 @@
-Overriding
+Overriding template
 ====
 
 Modificare il file `/dir/progetti/progetto/composer.json`:
