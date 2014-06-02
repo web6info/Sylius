@@ -9,9 +9,7 @@ Iniziamo creando la classe `Product.php` nel namespace `Web6\Bundle\XxxBundle\En
 ```php
 <?php  // src/Web6/Bundle/XxxBundle/Entity/Product.php
 namespace Web6\Bundle\ViaggiBundle\Entity;
-
 use Sylius\Component\Product\Model\Product as BaseProduct;
-
 class Product extends BaseProduct{
   private $expireOn;
   public function getExpireOn(){  return $this->expireOn;  }
