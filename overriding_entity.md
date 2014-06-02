@@ -7,8 +7,7 @@ Creeremo la nuova entità `Product` sovrascrivendo quella di default presente ne
 Iniziamo creando la classe `Product.php` nel namespace `Web6\Bundle\XxxBundle\Entity`
 
 ```php
-<?php
-// src/Web6/Bundle/XxxBundle/Entity/Product.php
+<?php  // src/Web6/Bundle/XxxBundle/Entity/Product.php
 namespace Web6\Bundle\ViaggiBundle\Entity;
 
 use Sylius\Component\Product\Model\Product as BaseProduct;
