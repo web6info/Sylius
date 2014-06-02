@@ -4,15 +4,15 @@ Creeremo la nuova entità `Product` sovrascrivendo quella di default presente ne
 
 Iniziamo creando la classe `Product.php` nel namespace `Web6\Bundle\XxxBundle\Entity`
 
-.. code-block:: php
+```php
+<?php
 
-    <?php
+// src/Web6/Bundle/XxxBundle/Entity/Product.php
+namespace Web6\Bundle\XxxBundle\Entity;
 
-    // src/Web6/Bundle/XxxBundle/Entity/Product.php
-    namespace Web6\Bundle\XxxBundle\Entity;
+use Sylius\Bundle\ProductBundle\Model\Product as BaseProduct;
 
-    use Sylius\Bundle\ProductBundle\Model\Product as BaseProduct;
-
-    class Product extends BaseProduct
-    {
-    }
+class Product extends BaseProduct
+{
+}
+```
