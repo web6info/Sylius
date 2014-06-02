@@ -15,8 +15,8 @@ use Sylius\Component\Product\Model\Product as BaseProduct;
 class Product extends BaseProduct{
 }
 ```
-Adesso definiamo il mapping per questa entità. È necessario creare il file di mapping nel path `src/Web6/Bundle/ViaggiBundle/Resources/config/doctrine/Product.orm.xml`:
-Now we need to define a simple mapping for this entity to map its fields.
+Adesso definiamo il mapping per questa entità.
+È necessario creare il file di mapping nel path `src/Web6/Bundle/ViaggiBundle/Resources/config/doctrine/Product.orm.xml`:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -30,4 +30,5 @@ Now we need to define a simple mapping for this entity to map its fields.
 
 </doctrine-mapping>
 ```
-Non è necessario mappare il campo *ID* dal momento che questo è già mappato nella classe `Sylius\Component\Product\Model\Product`.
+Non è necessario mappare il campo *ID* dal momento che questo è già mappato nella classe
+`Sylius\Component\Product\Model\Product`.
