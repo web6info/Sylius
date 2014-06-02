@@ -2,6 +2,7 @@ Overriding template
 ====
 
 [Sylius doc](http://docs.sylius.org/en/latest/bundles/general/overriding_controllers.html?highlight=overriding)
+[Symfony doc](http://symfony.com/it/doc/current/cookbook/bundles/inheritance.html)
 
 Modificare il file `/dir/progetti/progetto/composer.json`:
 
