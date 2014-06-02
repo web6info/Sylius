@@ -37,9 +37,9 @@ Adesso definiamo il mapping per questa entità.
 ```
 Infine, aggiungiamo le seguenti linee in ``app/config/config.yml``:
 ```yaml
-sylius_taxation:
+sylius_product:
     driver: doctrine/orm
     classes:
-        tax_rate:
-            model: Acme\ShopBundle\Entity\TaxRate # Your tax rate entity.
+        product:
+            model: Web6\Bundle\XxxBundle\Entity\Product # Your product entity.
 ```
