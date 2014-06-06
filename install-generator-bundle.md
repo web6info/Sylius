@@ -1,3 +1,6 @@
+Installare SensioGeneratorBundle su Sylius
+===
+
 Modificare il file `/dir/progetti/progetto/composer.json`:
 
 ```js
