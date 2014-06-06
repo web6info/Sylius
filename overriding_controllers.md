@@ -7,6 +7,17 @@ Overriding template
 
 Installare il "SensioGeneratorBundle" seguendo la guida indicata [qui](https://github.com/web6info/Sylius/blob/master/install-generator-bundle.md#installare-sensiogeneratorbundle-su-sylius).
 
+Per creare il proprio bundle, lanciare il seguente comando:
+```bash
+$ php app/console generate:bundle --namespace=Web6/Bundle/XxxBundle --format=yml
+```
+In `app/CliKernel.php` è possibile individuare la seguente riga
+```php
+new \Web6\Bundle\XxxBundle\Web6XxxBundle(),
+```
+Questa riga va eliminata da `app/CliKernel.php` e aggiunta in `app/AppKernel.php`.
+
+
 Modificare il file `src/Web6/Bundle/XxxBundle/Web6XxxBundle.php`:
 ```php
 namespace Web6\Bundle\XxxBundle;
