@@ -5,6 +5,7 @@ Overriding controllers
 - [Sylius doc](http://docs.sylius.org/en/latest/bundles/general/overriding_controllers.html?highlight=overriding)
 - [Symfony doc](http://symfony.com/it/doc/current/cookbook/bundles/inheritance.html)
 
+###Passo 1: creazione bundle
 Installare il "SensioGeneratorBundle" seguendo la guida indicata [qui](https://github.com/web6info/Sylius/blob/master/install-generator-bundle.md#installare-sensiogeneratorbundle-su-sylius).
 
 Per creare il proprio bundle, lanciare il seguente comando:
@@ -17,7 +18,7 @@ new \Web6\Bundle\XxxBundle\Web6XxxBundle(),
 ```
 Questa riga va eliminata da `app/CliKernel.php` e aggiunta in `app/AppKernel.php`.
 
-
+###Passo 2: parentela
 Modificare il file `src/Web6/Bundle/XxxBundle/Web6XxxBundle.php`:
 ```php
 namespace Web6\Bundle\XxxBundle;
@@ -27,6 +28,7 @@ class Web6XxxBundle extends Bundle{
 }
 ```
 
+###Passo 3: routing
 Per modificare il layout del frontend:
 
 ```bash
@@ -65,6 +67,8 @@ sylius_homepage:
     defaults: { _controller: Web6XxxBundle:Homepage:main }
     #defaults: { _controller: sylius.controller.frontend.homepage:mainAction }
 ```
+
+###Passo 4: overriding
 Modificare il file `src/Web6/Bundle/XxxBundle/Controller/HomepageController.php`:
 ```php
 namespace Web6\Bundle\XxxBundle\Controller;
