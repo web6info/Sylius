@@ -1,4 +1,4 @@
-Overriding template
+Overriding controllers
 ====
 
 ####Riferimenti
