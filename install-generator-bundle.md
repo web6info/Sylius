@@ -20,7 +20,7 @@ Modificare il file `/dir/progetti/progetto/composer.json`:
 Applicare le modifiche lanciando i seguenti comandi:
 ```bash
 $ cd /dir/progetti/progetto/
-$ php composer.phar update
+$ composer update
 ```
 
 Attivare il "SensioGeneratorBundle" modificando il file `AppKernel.php`:
